@@ -1,0 +1,766 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Raleway', sans-serif;
+}
+html,body{
+    height: 100%;
+
+}
+#container{
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+   
+    
+}
+
+/* FOOTER MAIN */
+
+#footer{
+    background-color: #D9D9D9;
+    top: 100%;
+    height: 80px;
+    /* margin-top: -80px; */
+    clear: both;
+    padding-top:16px;
+    padding-left:16px;
+    padding-right:16px;
+    flex-wrap:wrap;
+}
+
+.socialIcons{
+float: right;
+ 
+
+  
+}
+
+.footerContainer p{
+ float: left;
+    
+}
+
+
+
+/* JAMES IMAGE */
+.img-james {
+    display:block;
+    margin-left: 965px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+/* .img-line{
+    width: 100%;
+    
+   } */
+
+/* JAMES IMAGE HOVER ACTION */
+.jamesImage:hover{ 
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.1s ease-out;    
+
+}
+
+
+/* HEADER */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+
+
+/* NAVIGATION BAR STYLE */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+width: 150px;    
+}
+
+.nav-links{
+ flex: 1;
+ text-align: right;   
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #B0B9A8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+/* HERO TITLE */
+
+.text-box{
+    width: 90%;
+    color: #000;
+    position: absolute;
+    top:25%;
+    left: 46%;
+    transform: translate(-50%);
+    text-align: left;
+
+}
+.text-box h1{
+    font-size: 64px;
+    font-weight: lighter;
+    
+}
+.text-box p{
+    margin: 15px  65px;
+    font-size: 32px;
+    color: #000;
+    font-weight:normal
+}
+
+/* MY WORK TITLE */
+.titleWork h2{
+    position: absolute;
+    left: 5.2%;
+    top: 90%;
+    font-weight:normal
+   
+}
+
+
+/* BURGER MENU /NAVBAR */
+nav .fa{
+    display:none;
+}
+
+
+/* MOBILE FONT - MEDIA QUERY */
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        margin: 1px;
+        font-size: 12px;
+    
+    }
+/* MOBILE MENU UNSOLVED-MEDIA QUERY */
+.nav-links ul li{
+    display:block;    
+}
+.nav-links{
+    position: absolute;
+    background: #B0B9A8;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+}
+nav .fa{
+    display: block;
+    color: #B0B9A8;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+.nav-links ul{
+    padding:30px;
+
+}
+
+}
+
+
+/* CARDS */
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+ }
+
+/* CARD CONTENT */
+.card{
+    background-color: #E6E4E0;
+    width:440px;
+    height: 603px;
+    margin: 10px;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+    
+
+    }
+
+    /* CARD IMAGES */
+
+    .card-image{
+        height: 310px;
+        margin-bottom: 15px;
+        background-size:cover;
+    
+    }
+
+    .card-1{
+        background-image:url(images/Non\ Govt\ MAIN.png)
+    }
+
+    .card-2{
+        background-image:url(images/Govt\ Web.png) 
+    }
+    .card-3{
+        background-image:url(images/Spotify\ Wallet\ Proj.png)
+    }
+
+    .card h2{
+        padding: 16px;
+    }
+
+    .card p{
+        padding: 16px;
+    }
+
+    /* .card a{
+        padding: 16px;
+        
+    } */
+
+    .card button{
+       padding: 0px 16px;
+       margin: 16px;
+       background-color: #B0B9A8;
+       border-color:#B0B9A8 ;
+    }
+
+    /* CARD HOVER FEATURE */
+
+    .card:hover{
+        background-color:rgb(180, 180, 180);
+        color: #D9D9D9;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 0.1s ease-out;
+    }
+
+    .card button:hover{
+        background-color: #0D3721;
+        cursor: pointer;
+        transition: 0.1s;
+
+    }
+
+    .container button a:hover{
+     color: #fff;
+     cursor: pointer;
+     transition: 0.1s;   
+    }
+
+
+    /* FOOTER */
+           
+     /* HOVER EFFECT FOR FOOTER/ SOCIAL MEDIA ICONS */
+    
+    .socialIcons a:hover{
+        background-color: #B0B9A8;
+        transition: 0.5s;
+
+    }
+    .socialIcons a:hover i{
+        color: #000;
+        transition: 0.3s ease-in-out;
+
+
+    }
+
+    .footerNav{
+        margin: 30px 0;    
+    }
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerNav ul li a{
+        color: #fff;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 0.9em;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+
+/* ABOUT PAGE */
+
+.headerAbout h1{
+background: #B0B9A8;
+width: 400px;
+float: left;
+text-align: center;
+padding-top: 240px;
+padding-bottom: 240px;
+padding-left: 80px;
+padding-right: 80px;
+margin-bottom: 20%;
+font-weight: lighter;
+font-size: 48px;
+margin-left: 5%;
+}
+
+.aboutArticle h2{
+
+    padding-top: 0px;
+    float: right;
+    width: 500px;
+    margin-right: 10%;
+    line-height: 3em;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+.aboutArticle p{
+    float: right;
+    width: 500px;
+    margin-right: 10%;
+    line-height: 2em;
+    text-align: center;
+}
+
+.jamesImage {
+    float: right;
+    margin-right: 15%;
+}
+    
+   /* SKILLS PAGE */
+  
+.skillsWrapper{
+    display:flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.skillsWrapper>*{
+    flex: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+.header h1{
+    height: 80px;
+    font-size: 48px;
+    font-weight: lighter;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+.mainArticle h2{
+ line-height: 2.6em; 
+ font-weight: lighter;
+ font-size: 32px; 
+ flex-wrap: wrap;
+
+}
+
+.mainArticle{
+    float: left;
+    display:block;
+    width: 900px;
+    margin-left: 5%;
+    height: 100px;
+    line-height: 2em;
+    flex-wrap: wrap;
+    
+    
+}
+.asideSkills ul{
+    float: right;
+     margin-right: 5%;
+     background: #B0B9A8;
+     padding-left: 80px;
+     padding-right: 80px;
+     padding-top:60px;
+     height: 800px;
+     line-height: 3em;
+     margin-bottom: 2%;
+     font-weight: lighter;
+    flex-direction: wrap;
+   
+
+
+}
+
+.asideSkills ul h2{
+    font-weight: lighter;
+    line-height: 2em;
+    flex-direction:wrap ;
+}
+
+.buttonResume{
+    margin-left: 60%;
+    background: #B0B9A8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #B0B9A8;
+    position: relative;
+    flex-direction: column;
+   
+}
+
+.buttonResume:hover{
+    transition: 4ms;
+    background-color: #0D3721;
+    
+}
+
+.buttonResume a:hover{
+    color: #fff;
+
+}
+
+.asideSkills ul:hover{
+    transition: 0.4s;
+    background-color: #DCB482;
+}
+
+/* Main Page Line Picture Animation */
+   
+.lineOne path{
+stroke-dasharray: 15;
+stroke-dashoffset: 0;
+width: 100%;
+flex-wrap: wrap;
+
+}
+
+.lineOne:hover path{
+    animation: animate-lineOne 2s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate-lineOne {
+    0%
+    {stroke: dashoffset 0;
+    
+    }
+     
+    40%
+    {
+        stroke-dashoffset: 150;
+    }
+}
+
+/* Contact Page */
+
+.mainArticle p{
+width: 810px; 
+margin-bottom: 60px;   
+}
+
+.contactContainer{   
+display: flex;
+justify-content: space-between;
+}
+
+.contactContainer :hover{
+ transition: 100ms; 
+ background-color: #DCB482;  
+}
+
+.contactEmail{
+margin-top: 10%;    
+background-color: #D9D9D9;
+width: 332px;
+height: 216px;
+padding-left: 16px;
+
+}
+
+.contactPhone{    
+    margin-top: 10%;    
+    background-color: #D9D9D9;
+    width: 332px;
+    height: 216px;
+    padding-left: 16px;
+    margin-right: 10%;
+    
+    }
+
+.asideContact{
+    float: right;
+     margin-right: 5%;
+     background: #B0B9A8;
+     padding-left: 80px;
+     padding-right: 80px;
+     padding-top:60px;
+     height: 800px;
+     line-height: 2em;
+     margin-bottom: 2%;
+      
+}
+
+.asideContactContainer :hover{
+    transition: 4ms;
+    background-color: #DCB482;
+    color: #000;
+}
+
+.asideContact h2{
+    font-weight: lighter;
+    line-height: 4em;
+}
+
+.contactEmail a:hover{
+transition: 10ms;    
+color: #000;
+   
+}
+.contactPhone a:hover{
+    transition: 10ms;
+    color: #000;
+}
+
+/* RESUME PAGE */
+
+.ResumeBlurb p{
+width:1300px ;
+margin-left: 7%;
+
+
+}
+
+.buttonResumeDownload{
+    margin-left: 70%;
+    margin-top: 5%;
+    background: #B0B9A8;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: #B0B9A8;
+    position: relative;   
+   
+}
+
+.DownloadButtonWrap :hover{
+  
+    background-color: #0D3721;
+    transition: 4ms;  
+}
+
+.buttonResumeDownload a:hover{
+    color: #fff;
+}
+
+/* ACCORDION MENU */
+
+.skillsWrapper h1{
+    margin-left: 9%;
+}
+
+.accordionWrap{
+  margin: 15px;
+  
+    
+}
+
+.accordion {
+    background-color:#B0B9A8;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 150%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    margin: 0px 50px;
+    display: block;
+    margin-bottom: 1%;
+    
+  }
+  
+  .active, .accordion:hover {
+    background-color: #E6E4E0; 
+  }
+  
+  .panel {
+    width: 145%;
+    padding: 8px 18px;
+    display: none;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    
+  }
+
+  .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel p{
+ display: block;
+ margin: 0 auto;
+ width: 100%; 
+ font-size: 16px;
+
+}
+
+/* Case Study 1 */
+
+.CaseStudy1{
+
+background-image: url(images/Case\ Study\ 1\ Jumbotron.png);
+
+}
+
+.jumboCopy h1{
+ margin-left: 0%;
+ font-weight:300;   
+}
+
+.CaseStudy1 p{  
+width: 400px;    
+}
+   
+
+
+.imageNonGov{
+   align-items: center;
+}
+
+.NGOImage{
+ margin-top: 2.25%;   
+ margin-bottom: 2.25%;
+ margin-left: 3.25%; 
+
+}
+
+.CaseStudyNGO h2{
+    margin-left: 3.25%;
+}
+
+.CaseStudyNGO h3{
+    margin-left: 3.25%;
+}
+
+.IdeationImage{
+    display: flex;
+    justify-content: center;
+}
+
+.CaseStudyNGO p{
+margin-left: 3.25%;   
+width: 1200px;
+}
+
+/* Competitive Analysis section */
+
+.CompetitiveAnalysisBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+ 
+     
+}
+
+.CompAnalysisPar{
+display: flex;
+justify-content: center;
+}
+
+.CompetitiveAnalysisBox p{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+.UserFlowImage{
+ display: flex;
+ justify-content: center;   
+}
+
+/* Prototype NGO */
+
+.LowfiNGO{
+    display:flex;
+    justify-content: center;
+}
+
+.PrototypeNGO p{
+ margin-top: 1%;   
+ display: flex;   
+ justify-content: center;   
+}
+
+.NGOchat{
+    display:flex;
+    justify-content: center;
+    margin-top: 1%;
+    height: 350px; 
+}
+
+/* High Fi  */
+
+.NGOHeaderandFooter img{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin-left: 25%;
+}
+
+.NGOHeaderandFooter p{
+display: flex;
+margin-left: 25%;
+width: 800px;
+
+}
+
+
+
+    
+
