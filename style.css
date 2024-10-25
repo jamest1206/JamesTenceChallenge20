@@ -50,6 +50,7 @@ float: right;
     margin-left: 965px;
     height: 300px;
     flex-wrap: wrap;
+   
 }
 /* .img-line{
     width: 100%;
@@ -60,7 +61,8 @@ float: right;
 .jamesImage:hover{ 
     cursor: pointer;
     transform: scale(1.03);
-    transition: all 0.1s ease-out;    
+    transition: all 0.1s ease-out;
+       
 
 }
 
@@ -230,14 +232,14 @@ nav .fa{
     }
 
     .card-1{
-        background-image:url(images/Non\ Govt\ MAIN.png)
+        /* background-image:url(images/Non\ Govt\ MAIN.png) */
     }
 
     .card-2{
-        background-image:url(images/Govt\ Web.png) 
+        /* background-image:url(images/Govt\ Web.png)  */
     }
     .card-3{
-        background-image:url(images/Spotify\ Wallet\ Proj.png)
+        /* background-image:url(images/Spotify\ Wallet\ Proj.png) */
     }
 
     .card h2{
